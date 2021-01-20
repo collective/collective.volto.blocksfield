@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Module where all interfaces, events and exceptions live."""
-
-from zope.publisher.interfaces.browser import IDefaultBrowserLayer
+from plone.schema.jsonfield import IJSONField
 
 
-class ICollectiveVoltoBlocksfieldLayer(IDefaultBrowserLayer):
-    """Marker interface that defines a browser layer."""
+class IBlocksField(IJSONField):
+    """A text field that stores a set of blocks."""

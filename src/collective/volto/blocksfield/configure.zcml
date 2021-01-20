@@ -7,39 +7,10 @@
 
   <i18n:registerTranslations directory="locales" />
 
-  <!--
-    Be careful if you use general includeDependencies, it can have sideffects!
-    Better import explicite packages or configurations ;)
-  -->
-  <!--<includeDependencies package="." />-->
-
-  <include package=".browser" />
+  <include package=".adapters" />
+  <include package=".restapi" />
 
   <include file="permissions.zcml" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="collective.volto.blocksfield"
-      directory="profiles/default"
-      description="Installs the collective.volto.blocksfield add-on."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
-      />
-
-  <genericsetup:registerProfile
-      name="uninstall"
-      title="collective.volto.blocksfield (uninstall)"
-      directory="profiles/uninstall"
-      description="Uninstalls the collective.volto.blocksfield add-on."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.uninstall"
-      />
-
-  <utility
-      factory=".setuphandlers.HiddenProfiles"
-      name="collective.volto.blocksfield-hiddenprofiles"
-      />
-
-  <!-- -*- extra stuff goes here -*- -->
 
 </configure>
