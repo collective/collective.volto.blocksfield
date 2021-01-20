@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from design.plone.contenttypes.fields import IBlocksField
+from collective.volto.blocksfield.field import IBlocksField
 from plone.restapi.types.adapters import JSONFieldSchemaProvider
 from plone.restapi.types.interfaces import IJsonSchemaProvider
 from zope.component import adapter

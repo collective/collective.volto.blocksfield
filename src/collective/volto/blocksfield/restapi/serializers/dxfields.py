@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from design.plone.contenttypes.fields import IBlocksField
+from collective.volto.blocksfield.field import IBlocksField
 from plone.dexterity.interfaces import IDexterityContent
 from plone.restapi.interfaces import IBlockFieldSerializationTransformer
 from plone.restapi.interfaces import IFieldSerializer
