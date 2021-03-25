@@ -2,6 +2,11 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:zcml="http://namespaces.zope.org/zcml">
 
+    <subscriber factory=".blocks.TextBlockSerializer"
+      provides="plone.restapi.interfaces.IBlockFieldSerializationTransformer"/>
+    <subscriber factory=".blocks.ResolveUIDSerializer"
+      provides="plone.restapi.interfaces.IBlockFieldSerializationTransformer"/>
+
     <adapter factory=".dxfields.BlocksFieldSerializer" />
     
 </configure>
