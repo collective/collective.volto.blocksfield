@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2021-03-25)
 ------------------
 
 - Register standard blocks serializers/deserializer for IDexterityContent. Otherwise they don't work.
