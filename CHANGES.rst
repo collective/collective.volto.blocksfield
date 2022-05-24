@@ -5,7 +5,8 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- add check if value is a dict in SearchableText indexer.
+  [eikichi18]
 
 
 1.0.1 (2021-03-25)
