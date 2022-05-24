@@ -19,6 +19,9 @@ from zope.interface import implementer
 class BlocksFieldConverter(DefaultDexterityTextIndexFieldConverter):
     def convert(self):
         value = self.field.get(self.context)
+        if not isinstance(value, dict):
+            return ""
+
         blocks = value.get("blocks", {})
         if not blocks:
             return ""
