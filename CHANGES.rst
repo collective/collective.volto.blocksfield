@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2022-05-25)
 ------------------
 
 - add check if value is a dict in SearchableText indexer.
