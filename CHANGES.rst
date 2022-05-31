@@ -5,8 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Fix required python version.
+  [cekk]
 
 1.0.2 (2022-05-25)
 ------------------
