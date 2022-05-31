@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.volto.blocksfield',
-    version='1.0.3.dev0',
+    version='1.0.3',
     description="Field that allows to use blocks instead rich text",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
