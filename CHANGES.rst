@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.0 (unreleased)
+2.0.0 (2023-07-03)
 ------------------
 
 - Drop support for Plone 5.2 and collective.dexteritytextindexer; in Plone6
