@@ -2,11 +2,12 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Drop support for Plone 5.2 and collective.dexteritytextindexer; in Plone6
+  we use core functions in plone.app.dexterity.textindexer
+  [lucabel]
 
 1.0.3 (2022-05-31)
 ------------------
