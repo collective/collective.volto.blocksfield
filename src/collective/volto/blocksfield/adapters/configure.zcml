@@ -3,8 +3,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:zcml="http://namespaces.zope.org/zcml">
 
-  <configure zcml:condition="installed collective.dexteritytextindexer"> 
     <adapter factory=".searchabletext_indexers.BlocksFieldConverter" />
-  </configure> 
 
 </configure>
