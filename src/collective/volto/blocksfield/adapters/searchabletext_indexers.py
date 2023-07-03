@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-from collective.dexteritytextindexer.converters import (
-    DefaultDexterityTextIndexFieldConverter,
+
+from plone.app.dexterity.textindexer.converters import (
+DefaultDexterityTextIndexFieldConverter,
 )
-from collective.dexteritytextindexer.interfaces import (
+from plone.app.dexterity.textindexer.interfaces import (
     IDexterityTextIndexFieldConverter,
 )
 from collective.volto.blocksfield.interfaces import IBlocksField
