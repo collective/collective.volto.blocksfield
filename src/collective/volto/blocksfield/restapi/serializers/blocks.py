@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from plone.dexterity.interfaces import IDexterityContent
+from plone.restapi.bbb import IPloneSiteRoot
 from plone.restapi.interfaces import IBlockFieldSerializationTransformer
 from plone.restapi.serializer.blocks import ResolveUIDSerializerBase
 from plone.restapi.serializer.blocks import TextBlockSerializerBase
@@ -17,4 +18,16 @@ class ResolveUIDSerializer(ResolveUIDSerializerBase):
 @implementer(IBlockFieldSerializationTransformer)
 @adapter(IDexterityContent, IBrowserRequest)
 class TextBlockSerializer(TextBlockSerializerBase):
+    """ TextBlock Serializer for all content-types """
+
+
+@implementer(IBlockFieldSerializationTransformer)
+@adapter(IPloneSiteRoot, IBrowserRequest)
+class ResolveUIDSerializerRoot(ResolveUIDSerializerBase):
+    """ Base Serializer registered for all content-types """
+
+
+@implementer(IBlockFieldSerializationTransformer)
+@adapter(IPloneSiteRoot, IBrowserRequest)
+class TextBlockSerializerRoot(TextBlockSerializerBase):
     """ TextBlock Serializer for all content-types """
