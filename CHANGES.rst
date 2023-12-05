@@ -8,6 +8,8 @@ Changelog
 - Drop support for Plone 5.2 and collective.dexteritytextindexer; in Plone6
   we use core functions in plone.app.dexterity.textindexer
   [lucabel]
+- Add serializers and deserializer for slate blocks.
+  [cekk]
 
 1.0.3 (2022-05-31)
 ------------------

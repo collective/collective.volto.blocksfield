@@ -10,6 +10,10 @@
     provides="plone.restapi.interfaces.IBlockFieldDeserializationTransformer"/>
   <subscriber factory=".blocks.ResolveUIDDeserializer"
     provides="plone.restapi.interfaces.IBlockFieldDeserializationTransformer"/>
+  <subscriber factory=".blocks.SlateBlockDeserializer"
+    provides="plone.restapi.interfaces.IBlockFieldDeserializationTransformer"/>
+  <subscriber factory=".blocks.SlateTableBlockDeserializer"
+    provides="plone.restapi.interfaces.IBlockFieldDeserializationTransformer"/>
 
     <adapter factory=".dxfields.BlocksFieldDeserializer" />
 </configure>
