@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0.1 (unreleased)
+2.1.0 (2024-08-09)
 ------------------
 - Add serializers and deserializer for slate blocks.
   [cekk]
