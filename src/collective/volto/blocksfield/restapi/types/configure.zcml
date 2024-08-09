@@ -1,7 +1,8 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:zcml="http://namespaces.zope.org/zcml"
-    i18n_domain="collective.volto.blocksfield">
+    i18n_domain="collective.volto.blocksfield"
+    >
 
-    <adapter factory=".adapters.BlocksFieldSchemaProvider"/>
+  <adapter factory=".adapters.BlocksFieldSchemaProvider" />
 </configure>
