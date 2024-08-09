@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from collective.volto.blocksfield.interfaces import IBlocksField
 from plone.app.dexterity.textindexer.converters import (
     DefaultDexterityTextIndexFieldConverter,
 )
-from plone.app.dexterity.textindexer.interfaces import (
-    IDexterityTextIndexFieldConverter,
-)
-from collective.volto.blocksfield.interfaces import IBlocksField
+from plone.app.dexterity.textindexer.interfaces import IDexterityTextIndexFieldConverter
 from plone.dexterity.interfaces import IDexterityContent
 from plone.restapi.interfaces import IBlockSearchableText
 from z3c.form.interfaces import IWidget

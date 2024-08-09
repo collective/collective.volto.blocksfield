@@ -3,7 +3,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="collective.volto.blocksfield">
+    i18n_domain="collective.volto.blocksfield"
+    >
 
   <i18n:registerTranslations directory="locales" />
 
@@ -13,6 +14,9 @@
   <include file="permissions.zcml" />
 
   <!-- indexers -->
-  <adapter factory=".indexers.SlateTextIndexer" name="slate" />
+  <adapter
+      factory=".indexers.SlateTextIndexer"
+      name="slate"
+      />
 
 </configure>

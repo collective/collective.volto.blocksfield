@@ -6,14 +6,13 @@ from zope.schema.interfaces import IFromUnicode
 
 import json
 
+
 BLOCKS_FIELD_SCHEMA = json.dumps(
     {
         "type": "object",
         "properties": {
             "blocks": {"type": "object", "properties": {}},
-            "blocks_layout": {
-                "items": {"type": "array", "items": {"type": "string"}}
-            },
+            "blocks_layout": {"items": {"type": "array", "items": {"type": "string"}}},
         },
     }
 )

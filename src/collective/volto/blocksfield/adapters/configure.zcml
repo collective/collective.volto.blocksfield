@@ -1,8 +1,9 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:zcml="http://namespaces.zope.org/zcml">
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
 
-    <adapter factory=".searchabletext_indexers.BlocksFieldConverter" />
+  <adapter factory=".searchabletext_indexers.BlocksFieldConverter" />
 
 </configure>
