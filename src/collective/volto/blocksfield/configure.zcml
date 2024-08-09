@@ -12,5 +12,7 @@
 
   <include file="permissions.zcml" />
 
+  <!-- indexers -->
+  <adapter factory=".indexers.SlateTextIndexer" name="slate" />
 
 </configure>

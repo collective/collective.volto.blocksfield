@@ -15,5 +15,5 @@
   <subscriber factory=".blocks.SlateTableBlockDeserializer"
     provides="plone.restapi.interfaces.IBlockFieldDeserializationTransformer"/>
 
-    <adapter factory=".dxfields.BlocksFieldDeserializer" />
+  <adapter factory=".dxfields.BlocksFieldDeserializer" />
 </configure>

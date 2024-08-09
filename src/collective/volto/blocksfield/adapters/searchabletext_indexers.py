@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from plone.app.dexterity.textindexer.converters import (
-DefaultDexterityTextIndexFieldConverter,
+    DefaultDexterityTextIndexFieldConverter,
 )
 from plone.app.dexterity.textindexer.interfaces import (
     IDexterityTextIndexFieldConverter,
@@ -38,7 +38,6 @@ class BlocksFieldConverter(DefaultDexterityTextIndexFieldConverter):
                 IBlockSearchableText,
                 name=block_type,
             )
-
             if adapter is not None:
                 text = adapter(block)
                 if text:
