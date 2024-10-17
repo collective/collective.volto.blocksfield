@@ -4,7 +4,10 @@ Changelog
 2.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add marker interface to objects that have at least one BlockField in their schema.
+  [cekk]
+- Add block_types indexer customization for contents with IBlocksFieldEnabled interface to allow index also these blocks.
+  [cekk]
 
 
 2.1.0 (2024-08-09)

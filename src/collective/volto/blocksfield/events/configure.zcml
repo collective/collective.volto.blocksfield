@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.zope.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <subscriber
+      for="plone.dexterity.interfaces.IDexterityContent
+           zope.lifecycleevent.interfaces.IObjectAddedEvent"
+      handler=".handler.markObject"
+      />
+</configure>
