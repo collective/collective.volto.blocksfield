@@ -9,6 +9,7 @@
   <i18n:registerTranslations directory="locales" />
 
   <include package=".adapters" />
+  <include package=".browser" />
   <include package=".events" />
   <include package=".restapi" />
 

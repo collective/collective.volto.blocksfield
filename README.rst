@@ -26,6 +26,13 @@ Import it and use as a normal field::
             title="A field with blocks",
         )
 
+Upgrade to 2.2.0
+----------------
+
+From 2.2.0 version, objects with BlocksField are marked with a marker interface and blocks are indexed in block_types index.
+
+To update contents already created in the site, you need to create an updgrade-step or call "@@mark_contents_and_reindex" view.
+
 
 Installation
 ------------

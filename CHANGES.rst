@@ -8,7 +8,8 @@ Changelog
   [cekk]
 - Add block_types indexer customization for contents with IBlocksFieldEnabled interface to allow index also these blocks.
   [cekk]
-
+- Add support view "@@mark_contents_and_reindex" that helps to update already created contents with new informations.
+  [cekk]
 
 2.1.0 (2024-08-09)
 ------------------
