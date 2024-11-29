@@ -1,8 +1,8 @@
-from zope.interface import alsoProvides
 from collective.volto.blocksfield.field import BlocksField
-from plone.dexterity.utils import iterSchemata
-from zope.schema import getFields
 from collective.volto.blocksfield.interfaces import IBlocksFieldEnabled
+from plone.dexterity.utils import iterSchemata
+from zope.interface import alsoProvides
+from zope.schema import getFields
 
 
 def markObject(obj, event):

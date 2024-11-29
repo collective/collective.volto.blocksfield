@@ -1,14 +1,14 @@
 Changelog
 =========
 
-2.1.1 (unreleased)
+2.2.0 (unreleased)
 ------------------
 
 - Add marker interface to objects that have at least one BlockField in their schema.
   [cekk]
 - Add block_types indexer customization for contents with IBlocksFieldEnabled interface to allow index also these blocks.
   [cekk]
-- Add support view "@@mark_contents_and_reindex" that helps to update already created contents with new informations.
+- Make package installable: on install, mark already created contents as IBlocksFieldEnabled and reindex them.
   [cekk]
 
 2.1.0 (2024-08-09)

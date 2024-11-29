@@ -1,17 +1,16 @@
+from Acquisition import aq_base
+from collective.volto.blocksfield.field import BlocksField
+from collective.volto.blocksfield.interfaces import IBlocksFieldEnabled
 from plone.dexterity.interfaces import IDexterityContent
+from plone.dexterity.utils import iterSchemata
+from plone.indexer.decorator import indexer
+from plone.restapi.blocks import visit_blocks
 from plone.restapi.indexers import SlateTextIndexer as SlateTextIndexerBase
 from plone.restapi.interfaces import IBlockSearchableText
 from zope.component import adapter
 from zope.interface import implementer
 from zope.publisher.interfaces.browser import IBrowserRequest
-from collective.volto.blocksfield.interfaces import IBlocksFieldEnabled
-from Acquisition import aq_base
-from plone.dexterity.interfaces import IDexterityContent
-from plone.indexer.decorator import indexer
-from plone.restapi.blocks import visit_blocks
-from plone.dexterity.utils import iterSchemata
 from zope.schema import getFields
-from collective.volto.blocksfield.field import BlocksField
 
 
 @implementer(IBlockSearchableText)

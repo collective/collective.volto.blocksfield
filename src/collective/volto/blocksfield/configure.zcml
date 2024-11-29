@@ -9,17 +9,37 @@
   <i18n:registerTranslations directory="locales" />
 
   <include package=".adapters" />
-  <include package=".browser" />
   <include package=".events" />
   <include package=".restapi" />
 
   <include file="permissions.zcml" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Volto Blocks Field"
+      description=""
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Volto Blocks Field (uninstall)"
+      description=""
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
 
   <!-- indexers -->
   <adapter
       factory=".indexers.SlateTextIndexer"
       name="slate"
       />
-  <adapter factory=".indexers.block_types_indexer" name="block_types" />
+  <adapter
+      factory=".indexers.block_types_indexer"
+      name="block_types"
+      />
 
 </configure>
