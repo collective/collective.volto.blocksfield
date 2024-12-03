@@ -28,7 +28,7 @@ def post_install(context):
     """Post install script"""
     # mark contents with blocksfield and reindex them
     catalog = api.portal.get_tool(name="portal_catalog")
-    brains = catalog.getAllBrains()
+    brains = list(catalog.getAllBrains())
     tot = len(brains)
     logger.info(f"Updating {tot} items.")
     reindexed = []
