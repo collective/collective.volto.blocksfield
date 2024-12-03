@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.2.0 (unreleased)
+2.2.0 (2024-12-03)
 ------------------
 
 - Add marker interface to objects that have at least one BlockField in their schema.
